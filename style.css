@@ -9,6 +9,75 @@ li{
     list-style: none;
 
 }
+.nav-bar{
+    z-index: 1;
+    position: absolute;
+    margin-bottom: 500px;
+    box-sizing: border-box;
+   
+    
+    
+    
+   
+    
+}
+.nav-bar ul {
+    display: flex;
+    overflow: hidden;
+   
+
+}
+.nav-bar ul li{
+    box-sizing: border-box;
+    font-size: x-large;
+
+}
+.nav-bar ul li a{
+    display: block;
+    padding: 18px 20px;
+    color: white;
+    
+}
+
+li.home{
+    display: inline-block;
+    background-color: rgb(236, 159, 63);
+    border-style: solid;
+    border-color: rgb(236, 159, 63);
+   
+ 
+}
+.dropdown{
+  position: absolute;
+  width: 200px;
+  height: auto;
+  text-align: left;
+  padding: 2px 0px;
+  display: none;
+  margin-left: -2px;
+  
+
+
+}
+.home:hover{
+    background: transparent;
+    transition: 1s;
+}
+.home:hover .dropdown{
+    display: block;
+
+    
+}
+.dropdown a{
+
+    display: block;
+ 
+}
+.dropdown a:hover{
+    background-color: rgb(2236, 159, 63);
+    color: white;
+  
+}
 a{
     text-decoration: none;
 }
@@ -24,6 +93,7 @@ header{
     text-align: center;
     justify-content: center;
     align-items: center;
+    
 }
 header::before{
     position: absolute;
@@ -85,6 +155,7 @@ right: 0;
     color: rgb(236, 159, 63);
     position: fixed;
     
+    
 
 }  
  .menu-line{
@@ -92,6 +163,7 @@ right: 0;
      height: 4px;
      background-color: rgb(236, 159, 63);
      position: relative;
+    
     
 
  }
@@ -128,6 +200,7 @@ right: 0;
     z-index: 10;
     flex-direction: column;
     transition: 0.5s;
+    
 }
 .menu-item li{
     line-height: 40px;
@@ -254,6 +327,9 @@ i:hover{
     height: 100vh;
     
 }
+
+
+
 .pic-1{
     background-image: url(img/hinhanh.jpg);
     width: 33.3%;
