@@ -9,75 +9,6 @@ li{
     list-style: none;
 
 }
-.nav-bar{
-    z-index: 1;
-    position: absolute;
-    margin-bottom: 500px;
-    box-sizing: border-box;
-   
-    
-    
-    
-   
-    
-}
-.nav-bar ul {
-    display: flex;
-    overflow: hidden;
-   
-
-}
-.nav-bar ul li{
-    box-sizing: border-box;
-    font-size: x-large;
-
-}
-.nav-bar ul li a{
-    display: block;
-    padding: 18px 20px;
-    color: white;
-    
-}
-
-li.home{
-    display: inline-block;
-    background-color: rgb(236, 159, 63);
-    border-style: solid;
-    border-color: rgb(236, 159, 63);
-   
- 
-}
-.dropdown{
-  position: absolute;
-  width: 200px;
-  height: auto;
-  text-align: left;
-  padding: 2px 0px;
-  display: none;
-  margin-left: -2px;
-  
-
-
-}
-.home:hover{
-    background: transparent;
-    transition: 1s;
-}
-.home:hover .dropdown{
-    display: block;
-
-    
-}
-.dropdown a{
-
-    display: block;
- 
-}
-.dropdown a:hover{
-    background-color: rgb(2236, 159, 63);
-    color: white;
-  
-}
 a{
     text-decoration: none;
 }
@@ -90,10 +21,13 @@ header{
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     align-items: center;
+   
+   
     
+  
 }
 header::before{
     position: absolute;
@@ -135,8 +69,106 @@ header input:checked ~ .menu-icon .menu-line{
 header input:checked ~ .menu-item {
 right: 0;
 
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    display: block;
+    
+    
+   
+}
 
 
+.navigation li a{
+    color: rgb(236, 159, 63);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+
+ 
+
+
+}
+.title-menu {
+    position: absolute;
+    z-index: 1;
+    padding: 9px 18px ;
+    display: none;
+    top: 80px;
+    background-color: black;
+    
+    
+    
+}
+
+
+.navigation{
+    height: 100%;
+    justify-content: center;
+     display: flex;
+    
+}
+
+.list {
+    width: fit-content;
+    padding: 25px 0;
+   
+    
+    /* (cách để căn giữa) thằng cha cho display: table; */
+    height: 100%
+    
+
+}
+
+.title-menu a{
+    border-bottom: 1px solid rgb(97, 95, 91);
+   
+    
+}
+.title-menu li:hover a{
+    border-bottom: 1px solid rgb(180, 177, 171);
+}
+.title-menu li:last-child a{
+    border: none;
+}
+
+.list:hover .title-menu{
+    display: block;
+}
+.list a{
+    padding: 0px 20px;
+    
+    /* (cách để căn giữa) thằng con cho display: table-cell; */
+    /* vertical-align: middle; */
+    
+}
+.title-1{
+    color: rgb(236, 159, 63);
+    font-size: x-small;
+    display: none;
+    background-color: black;
+    width: 200px;
+   
+    margin-top: -30px;
+    
+    margin-left: 135px;
+    position: absolute;
+    
+   
+
+}
+.title-1 li{
+    padding: 8px 15px;
+}
+.title-menu :hover .title-1{
+    display: block;
+    position: absolute;
+    
 
 }
  .menu-icon {
@@ -211,12 +243,16 @@ right: 0;
 .header-text{
     position: absolute;
 
+
 }
 .header-text h1{
     font-size: 50px;
     color: rgb(236, 159, 63);
     margin-bottom: 20px;
     font-family:'Dancing Script', cursive;
+   
+  
+    
 }
 .header-text a{
     padding: 15px 40px;
@@ -229,6 +265,7 @@ right: 0;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     transition: 0.3s;
+ 
 }
 .header-text a:hover{
 color: rgb(236, 159, 63);
